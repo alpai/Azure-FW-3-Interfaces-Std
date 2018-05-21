@@ -11,13 +11,14 @@
     },
     "storageAccountName": {
       "type": "string",
+      "defaultValue" : "storage7t6czj2upp3ac",
       "metadata": {
         "description": "Name of the EXISTING storage account used to store the VM's disks"
       }
     },
     "storageAccountExistingRG": {
        "type": "string",
-       "defaultValue" : "",
+       "defaultValue" : "apaigap15",
        "metadata": {
           "description": "Storage Accounts Resource Group."
        }
@@ -73,25 +74,25 @@
       "metadata": {
         "description": "Name of the EXISTING Virtual Network (VNET)"
       },
-      "defaultValue": "fwVNET"
+      "defaultValue": "apaigap15vnet"
     },
     "virtualNetworkAddressPrefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/16",
+      "defaultValue": "10.0.0.0/16",
       "metadata": {
         "description": "EXISTING Virtual network address CIDR"
       }
     },
     "virtualNetworkExistingRGName": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "apaigap15",
       "metadata": {
         "description": "Name of resource group of EXISTING VNET"
       }
     },
     "subnet0Name": {
       "type": "string",
-      "defaultValue": "Mgmt",
+      "defaultValue": "Management",
       "metadata": {
         "description": "EXISTING Subnet for Management"
       }
@@ -112,48 +113,49 @@
     },
     "subnet0Prefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/24",
+      "defaultValue": "10.0.0.0/24",
       "metadata": {
         "description": "EXISTING Mgmt subnet CIDR"
       }
     },
     "subnet1Prefix": {
       "type": "string",
-      "defaultValue": "192.168.1.0/24",
+      "defaultValue": "10.0.1.0/24",
       "metadata": {
         "description": "EXISTING Untrust subnet CIDR"
       }
     },
     "subnet2Prefix": {
       "type": "string",
-      "defaultValue": "192.168.2.0/24",
+      "defaultValue": "10.0.2.0/24",
       "metadata": {
         "description": "EXISTING Trust subnet CIDR"
       }
     },
     "subnet0Address": {
       "type": "string",
-      "defaultValue": "192.168.0.4",
+      "defaultValue": "10.0.0.4",
       "metadata": {
         "description": "Mgmt subnet static address"
       }
     },
     "subnet1Address": {
       "type": "string",
-      "defaultValue": "192.168.1.4",
+      "defaultValue": "10.0.1.4",
       "metadata": {
         "description": "Untrust subnet static address"
       }
     },
     "subnet2Address": {
       "type": "string",
-      "defaultValue": "192.168.2.4",
+      "defaultValue": "10.0.2.4",
       "metadata": {
         "description": "Trust subnet static address"
       }
     },
     "adminUsername": {
       "type": "string",
+      "defaultValue": "azureadmin",
       "metadata": {
         "description": "Username of the administrator account of VM-Series"
       }
@@ -173,7 +175,7 @@
     },
     "nsgName": {
       "type": "string",
-      "defaultValue": "DefaultNSG",
+      "defaultValue": "Mgmt-Access",
       "metadata": {
         "description": "Name of existing Network Security Group for MGMT FW interface"
       }
