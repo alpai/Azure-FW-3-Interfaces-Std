@@ -1,17 +1,17 @@
 # Azure-FW-3-Interfaces-
-Repo created to support the deployment of a 3 interface Palo Alto Networks firewall (1-MGMT and 2-Dataplane)  into an existing Microsoft Azure environment. 
+Repo created to support the deployment of a 3 interface Palo Alto Networks firewall (1-MGMT and 2-Dataplane)  into an existing Microsoft Azure environment.
 
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPaloAltoNetworks%2FAzure-FW-3-Interfaces-%2Fmaster%2FAzureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Falpai%2FAzure-FW-3-Interfaces-Std%2Fmaster%2FAzureDeploy.json)
 
 This template was created to support the deployment of a 3 interface Palo Alto Networks firewall (1-MGMT and 2-Dataplane)  into an existing Microsoft Azure environment that has the following items already created:
 
-                  
+
                     -Availability Set for the Firewall created in the same Resource Group that the firewall will be in
                     -VNET - with subnets
                     -Storage Account for the firewall VHD
                     -Resource Group for Firewall
-            
+
 
 FEATURES:
 - The firewall deploys with 3 interfaces.  1 MGMT and 2 data plane into an existing environment.
@@ -26,7 +26,7 @@ The following Storage Account types are supported:
                     -Standard_GRS
                     -Standard_RAGRS
                     -Premium_LRS
-                    
+
 The following VMs are supported:
 
                     -Standard_D3
@@ -36,7 +36,7 @@ The following VMs are supported:
                     -Standard_A4
                     -Standard_DS3_v2
                     -Standard_DS4_v2
-        
+
 NOTE: Make sure the VMs are supported in the specific Storage Account Type and Azure Region.
 
 After deploying, this firewall can be intetgrated into a load balancer setup via the Azure Portal.
